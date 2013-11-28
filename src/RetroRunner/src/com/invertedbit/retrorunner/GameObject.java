@@ -15,6 +15,10 @@ public abstract class GameObject
 {
 	protected float posX;
 	protected float posY;
+	protected double aX;
+	protected double aY;
+	protected double vX;
+	protected double vY;
 	protected float width;
 	protected float height;
 	protected TextureRegion texture;
@@ -31,7 +35,7 @@ public abstract class GameObject
 		
 	}
 	
-	public abstract void update();
+	public abstract void update(double delta);
 	
 	public void draw(SpriteBatch batch)
 	{
